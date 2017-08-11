@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Markdown"
+title:  "Markdown语法"
 date:   2016-10-12 17:13:17 +0800
 categories: diary
 location: Florence, Italy
-description: love markdown, love plain texts. Enjoy its manual
+description: 话不多说，简单粗暴
 ---
 ---
 Markdown manual

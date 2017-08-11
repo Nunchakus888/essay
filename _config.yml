@@ -3,23 +3,21 @@ domain: "http://songroger.win"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://songroger.github.io/" # the base hostname & protocol for your site
 permalink: /:title/
-avatar: http://7xof48.com1.z0.glb.clouddn.com/avatar.jpg
-about: http://7xof48.com1.z0.glb.clouddn.com/about.jpg
-favicon: http://7xof48.com1.z0.glb.clouddn.com/favicon.png
+avatar: /assets/image/logo.jpg
+about:
+favicon: /assets/image/logo.jpg
 basecss: 
 # Theme specific configuration
-title: songroger
+title: િ🙄ી
 description: >
-  Hi there, My name is Luozhan.Song, usually I use "songroger" as my ID everywhere.
-  I was born and raised in Hunan China. 
-  I'm really fond of beautiful design, drawing etc.
+  额，我先部署个静态页面试试～～
 
 # Contact and social media links
-twitter_username: songrogero
-github_username: songroger
-facebook_username: song.roger.1
-instagram_username: songroger198
-linkedin_username: songroger
+# twitter_username: Roidder
+github_username: nunchakus888
+facebook_username: િ😄ી
+instagram_username: િ🙄ી
+linkedin_username: sfdsa
 
 exclude: ['node_modules', 'gulpfile.js', 'package.json']
 

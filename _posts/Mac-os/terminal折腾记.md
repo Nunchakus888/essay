@@ -1,0 +1,44 @@
+---
+layout: post
+title:  Terminal折腾记...
+date:   2017-6-26 00:00:00 +0800
+categories: diary
+location: ShangHai, China
+description: 终端主题，配色，文件／git分支名自动补全，<= 5min速配！
+tail: 深夜搞机，坑何其多？
+---
+---
+### Terminal折腾记 
+重度 `windows cmd`依赖用户，切到Mac上来百般不适。。。注定是一条无休止的折腾路。。那就来吧，前面走过的坑坑洼洼走一次就行了，往后简单粗暴，copy即可！
+
++ 终端tab自动补全：
+    - 配置tab自动补全功能，需要用root用户权限，我们先启动root权限：
+    - 偏好设置--> 用户与群组--> 解锁 --> 网络账户服务器--> 加入--> 打开目录使用工具--> 解锁设置root权限-->上锁退出
+    - 打开终端：
+        ```
+        1.su root 然后登录
+        2.输入 nano .inputrc
+        3.输入内容：
+        set completion-ignore-case on  
+        set show-all-if-ambiguous on  
+        TAB:menu-complete  
+        4.ctru + o 
+        5.可以再新开个终端试试tab是否生效
+        6.End.
+        ```
+ 
++ 终端主题&git分支名自动补全
+    - install <br/>
+        `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+        
+    - theme <br/>
+        `nano ~/.zshrc` <br/>
+        编辑ZSH_THEME=`"robbyrussell"` 
+        [示例](https://github.com/robbyrussell/oh-my-zsh/wiki/Themes)
+        
+    - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/blob/master/README.md)
+    
++ 最后上个效果图િ🙄ી
+    ![](https://github.com/Nunchakus888/blog/blob/master/Mac-os/img/terminal.png)
+    
+#### 关于终端折腾是一不归路，走不到头。以上配置，可以满足绝大多数场景的高效coding了，所以我们本着时间精力花费的最大性价比化，爱装逼，不求无敌！

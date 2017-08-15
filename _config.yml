@@ -20,6 +20,8 @@ instagram_username: િ🙄ી
 linkedin_username: sfdsa
 
 exclude: ['node_modules', 'gulpfile.js', 'package.json']
+include: ['_pages']
+
 
 kramdown:
   input: GFM
@@ -33,3 +35,4 @@ gems: ['jekyll-paginate']
 # Pagination
 paginate: 5
 paginate_path: /archive/page:num
+encoding: utf8

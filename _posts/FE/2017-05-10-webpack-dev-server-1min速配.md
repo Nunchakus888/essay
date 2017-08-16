@@ -1,3 +1,13 @@
+---
+layout: post
+title:  webpack-dev-server-1min速配
+date:   2017-05-10
+categories: diary
+location: ShangHai, China
+description: 开始⌛️...
+tail: 超过1min就再花1分钟😁
+---
+---
 ##### webpack-dev-server速配：
 简单粗暴 123...
 + + + + +

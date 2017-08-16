@@ -5,9 +5,9 @@ date:   2017-06-10
 categories: diary
 location: ShangHai, China
 description: the notes of basic..
-tail: 
 ---
 ---
+
 ### Notes..
 
 + state :

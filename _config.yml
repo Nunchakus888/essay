@@ -1,5 +1,5 @@
 # Site configuration
-domain: http://nunchakus888.github.io/essay
+#domain: http://nunchakus888.github.io/essay
 #baseurl: /essay # the subpath of your site, e.g. /blog/
 #url: http://nunchakus888.github.io/essay # the base hostname & protocol for your site
 permalink: /:title/

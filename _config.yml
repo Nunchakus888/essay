@@ -4,13 +4,12 @@ baseurl: /essay # the subpath of your site, e.g. /blog/
 #url: "" # the base hostname & protocol for your site
 permalink: /:title/
 avatar: /assets/image/logo.jpg
-about:
+about: /assets/image/logo.jpg
 favicon: /assets/image/logo.jpg
 basecss: 
 # Theme specific configuration
 title: િ🙄ી
-description: >
-  额，我先部署个静态页面试试～～
+description: 额，我先部署个静态页面试试～～
 
 # Contact and social media links
 stackoverflow_username: nunchakus

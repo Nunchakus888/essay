@@ -8,6 +8,8 @@ description: 用Typescript写起来多爽啊！
 tail: To be continued...
 ---
 ---
+
+
 # Typescript learn notes~~
 
 1.Typescript类型断言，将 something 断言成 string

@@ -8,20 +8,22 @@ description: 开始⌛️...
 tail: 超过1min就再花1分钟😁
 ---
 ---
-##### webpack-dev-server速配：
+
+
+#### webpack-dev-server速配：
 简单粗暴 123...
-+ + + + +
+
 ```
 "dev": "NODE_ENV=development webpack-dev-server --open --hot",
 ```
 
-+ + + + +
+
 ```
 output: {
     publicPath: 'dist',
 },
 ```
-+ + + + +
+
 ```
 devServer: {
     contentBase: path.join(__dirname, './html'),

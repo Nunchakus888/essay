@@ -1,6 +1,6 @@
 # Site configuration
 #domain: "http://nunchakus888.github.io/"
-baseurl: /essay # the subpath of your site, e.g. /blog/
+baseurl: /essay/ # the subpath of your site, e.g. /blog/
 #url: "" # the base hostname & protocol for your site
 permalink: /:title/
 avatar: /assets/image/logo.jpg

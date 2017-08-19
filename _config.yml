@@ -4,12 +4,13 @@
 #url: http://nunchakus888.github.io/essay # the base hostname & protocol for your site
 permalink: /:title/
 avatar: /assets/image/logo.jpg
-about: /assets/image/logo.jpg
+wechat: /assets/image/wechat-pay.jpg
+alipay: /assets/image/alipay.jpg
 favicon: /assets/image/logo.jpg
 basecss: 
 # Theme specific configuration
-title: િ🙄ી
-description: 额，我先部署个静态页面试试～～
+title: 
+#description: 额，我先部署个静态页面试试～～
 
 # Contact and social media links
 stackoverflow_username: nunchakus
@@ -25,7 +26,7 @@ kramdown:
 
 # If U enable the comment, edit disqus or duoshuo account
 # before deploy your webpage
-enable_comment: false
+enable_comment: true
 # disqus_account: songroger
 
 gems: ['jekyll-paginate']

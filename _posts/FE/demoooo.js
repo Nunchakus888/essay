@@ -88,26 +88,25 @@ b = [3, 2, 1];
 console.log(a + b);
 //1,2,33,2,1😅*/
 
-/*
 function fillArray(n) {
     const top = n % 2 ? (~~(n / 2) + 1) : n / 2;
     const arr = [];
-    while (n) {
+    n += 1;
+    while (n--) {
         console.log(n);
-        if (n-- < top) {
-            console.log('<<<', n);
+        if (n && n <= top) {
             arr.push(n);
-        } else {
-            arr.push('>>>', n - top);
-            console.log(arr);
+        } else if (n > top){
+            arr.push(2 * top - n);
+            console.log('>>>', 2 * top - n);
         }
-        //n-- < top ? arr.push(n) : arr.push(n - top);
     }
     console.log(arr);
     return arr;
 }
-fillArray(5);*/
+fillArray(7);
 
+/*
 const data = [
     {name: 'Iris', val: 123, grade: 'A'},
     {name: 'Neo', val: 233, grade: 'A'},
@@ -117,7 +116,7 @@ const data = [
     {name: 'Hey', val: 39 , grade: 'C'}
 ];
 
-/*function group(data) {
+/!*function group(data) {
     const set = new Set();
     const result = [];
     data.forEach(i => {
@@ -127,7 +126,7 @@ const data = [
         result.push(data.filter(i => i.grade === s).sort((a, b) => a.val > b.val));
     });
     return result;
-}*/
+}*!/
 
 function group(data) {
     const set = new Set();
@@ -137,4 +136,4 @@ function group(data) {
     });
 }
 
-console.log(group(data));
+console.log(group(data));*/

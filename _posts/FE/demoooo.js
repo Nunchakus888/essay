@@ -81,8 +81,60 @@ const run = myGenerator => {
 };
 run(generator);*/
 
+/*
 a = [1, 2, 3];
 b = [3, 2, 1];
 //a + b = ?
 console.log(a + b);
-//1,2,33,2,1😅
+//1,2,33,2,1😅*/
+
+/*
+function fillArray(n) {
+    const top = n % 2 ? (~~(n / 2) + 1) : n / 2;
+    const arr = [];
+    while (n) {
+        console.log(n);
+        if (n-- < top) {
+            console.log('<<<', n);
+            arr.push(n);
+        } else {
+            arr.push('>>>', n - top);
+            console.log(arr);
+        }
+        //n-- < top ? arr.push(n) : arr.push(n - top);
+    }
+    console.log(arr);
+    return arr;
+}
+fillArray(5);*/
+
+const data = [
+    {name: 'Iris', val: 123, grade: 'A'},
+    {name: 'Neo', val: 233, grade: 'A'},
+    {name: 'Mex', val: 144, grade: 'B'},
+    {name: 'Jerry', val: 23, grade: 'C'},
+    {name: 'Gait', val: 98 , grade: 'D'},
+    {name: 'Hey', val: 39 , grade: 'C'}
+];
+
+/*function group(data) {
+    const set = new Set();
+    const result = [];
+    data.forEach(i => {
+        set.add(i.grade);
+    });
+    set.forEach(s => {
+        result.push(data.filter(i => i.grade === s).sort((a, b) => a.val > b.val));
+    });
+    return result;
+}*/
+
+function group(data) {
+    const set = new Set();
+    data.forEach(i => set.add(i.grade));
+    return Array.from(set).map(s => {
+        return [...data.filter(i => i.grade === s).sort((a, b) => a.val > b.val)];
+    });
+}
+
+console.log(group(data));

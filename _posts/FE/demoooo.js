@@ -91,20 +91,10 @@ console.log(a + b);
 function fillArray(n) {
     const top = n % 2 ? (~~(n / 2) + 1) : n / 2;
     const arr = [];
-    n += 1;
-    while (n--) {
-        console.log(n);
-        if (n && n <= top) {
-            arr.push(n);
-        } else if (n > top){
-            arr.push(2 * top - n);
-            console.log('>>>', 2 * top - n);
-        }
-    }
-    console.log(arr);
-    return arr;
+    for (let i = 1; arr.push(i) <= top - 1; i++);
+    return n % 2 ? [...arr, ...arr.slice(0, arr.length - 1).reverse()] : [...arr, ...arr.reverse()];
 }
-fillArray(7);
+console.log(fillArray(11).toString());
 
 /*
 const data = [
@@ -137,3 +127,45 @@ function group(data) {
 }
 
 console.log(group(data));*/
+
+
+
+// 当时大体思路就是判断n的奇偶性，反转数组，再合成。
+//
+// 1.vue & AngularJs 1.x双向数据绑定如何实现？
+// 2.如何不用new，创建一个对象，具有原对象的属性方法？
+// 3.css模块化怎么实现？
+// 4.call & apply 区别？
+// 5.
+
+class JuejinFrontendEnginnerSpecification implements Specification {
+    isSatisfiedBy(person) {
+        return person.isInteresting() && person.canWriteBUG()
+    }
+}
+
+class JuejinFrontendEnginner extends FrontendEngineer {
+    constructor(person) {
+        super(person)
+        this.thingList = [
+            'ES6+',
+            'Node.js v8+',
+            'Vue.js v2.4+',
+            'SSR',
+            'Chrome (Extension|Headless)',
+            'Weixin',
+            'Docker',
+            'rm -rf /',
+            'escape'
+        ]
+    }
+
+    doSomeInterestingThings() {
+        this.thingList.forEach(this.tryToPlay.bind(this))
+    }
+
+}
+const juejinFrontendEnginnerSpecification = new JuejinFrontendEnginnerSpecification();
+if (juejinFrontendEnginnerSpecification.isSatisfiedBy(you)) {
+    new JuejinFrontendEnginner(you).doSomeInterestingThings()
+}

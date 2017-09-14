@@ -88,6 +88,7 @@ b = [3, 2, 1];
 console.log(a + b);
 //1,2,33,2,1😅*/
 
+/*
 function fillArray(n) {
     const top = n % 2 ? (~~(n / 2) + 1) : n / 2;
     const arr = [];
@@ -95,6 +96,7 @@ function fillArray(n) {
     return n % 2 ? [...arr, ...arr.slice(0, arr.length - 1).reverse()] : [...arr, ...arr.reverse()];
 }
 console.log(fillArray(11).toString());
+*/
 
 /*
 const data = [
@@ -138,6 +140,7 @@ console.log(group(data));*/
 // 4.call & apply 区别？
 // 5.
 
+/*
 class JuejinFrontendEnginnerSpecification implements Specification {
     isSatisfiedBy(person) {
         return person.isInteresting() && person.canWriteBUG()
@@ -168,4 +171,30 @@ class JuejinFrontendEnginner extends FrontendEngineer {
 const juejinFrontendEnginnerSpecification = new JuejinFrontendEnginnerSpecification();
 if (juejinFrontendEnginnerSpecification.isSatisfiedBy(you)) {
     new JuejinFrontendEnginner(you).doSomeInterestingThings()
+}*/
+
+function defineReactive(obj, key, val) {
+    Object.defineProperty(obj, key, {
+        get: function () {
+            console.log(`read my attribute-->${key}`);
+            return val;
+        },
+        set: function (newValue) {
+            console.log(`set my attribute-->${key}`);
+            val = newValue;
+        }
+    })
 }
+function observable(o) {
+    Object.keys(o).forEach(i => {
+        defineReactive(o, i, o[i]);
+    })
+}
+const o = {
+    name: 'Jekyll&Hyde',
+    age: '23'
+};
+
+observable(o);
+console.log(o.name);
+console.log(o.name = 12332112331);

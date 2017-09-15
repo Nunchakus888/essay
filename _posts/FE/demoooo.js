@@ -198,3 +198,6 @@ const o = {
 observable(o);
 console.log(o.name);
 console.log(o.name = 12332112331);
+console.log(o.name);
+
+

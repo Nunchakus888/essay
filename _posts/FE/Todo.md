@@ -1,4 +1,18 @@
 
+---
+layout: post
+title:  2017-09-22最近一段时间的idea
+date:   2017-09-22 21:11:00
+categories: diary
+location: ShangHai, China
+description: 
+tail: ...
+
+
+---
+---
+
+
 
 脑洞💡好多，没时间完成，赶紧记下来😄。
 
@@ -11,19 +25,5 @@
     而这个完全配置，不需要再有任何开发工作。
     一旦落实感觉会让前端的同事全体失业的。
     所以不能开源给后端小伙伴😄
-
-<!--
-
----
-layout: post
-title:  2017-09-22最近一段时间的idea
-date:   2017-09-22 21:11:00
-categories: diary
-location: ShangHai, China
-description: 
-tail: ...
-
----
----
-
--->
+3.时光记忆收集器，专手机这些年发布于各大平台的动态，按时间筛选汇总。适合念旧的的老年人使用😄。
+    

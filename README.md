@@ -1,12 +1,12 @@
 
 require: 是 CommonJS 规范
--------
+=======
 + CommonJS 规范是为了解决js的作用域问题而定义的模块形式，可以使每个模块它自身的命名空间中执行，该规范的主要内容是：
     + `模块必须通过module.exports抛出对外的变量或接口`，通过require（）来导入其他模块的输出到当前模块作用域中。
     + `CommonJs`是同步加载模块，也有浏览器端的实现，其原理是将所有的模块都定义好，并通过ID索引，然后在浏览器环境中解析。
 
 exports & module.exports
-=======
+-------
 
 > exports 和 module.exports占据同一块内存区域
 模块最后以 module.exports 导出，然后用require导入。

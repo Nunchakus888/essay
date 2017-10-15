@@ -1,29 +1,30 @@
 
-### require: 是 CommonJS 规范
+require: 是 CommonJS 规范
+-------
 + CommonJS 规范是为了解决js的作用域问题而定义的模块形式，可以使每个模块它自身的命名空间中执行，该规范的主要内容是：
     + `模块必须通过module.exports抛出对外的变量或接口`，通过require（）来导入其他模块的输出到当前模块作用域中。
     + `CommonJs`是同步加载模块，也有浏览器端的实现，其原理是将所有的模块都定义好，并通过ID索引，然后在浏览器环境中解析。
 
 exports & module.exports
-----------------
+=======
+
 > exports 和 module.exports占据同一块内存区域
 模块最后以 module.exports 导出，然后用require导入。
 所以，此处可能会有一类改变地址的操作例如 exports = null，最后导出都不会生效，以module.exports为准。
 
 
-### import: ESMAScript规范, ES6+
+import: ESMAScript规范, ES6+
+=======
 
 ES6 模块的设计思想，`是尽量的静态化`，使得编译时就能确定模块的依赖关系，以及输入和输出的变量。
-`CommonJS 和 AMD 模块，都只能在运行时确定这些东西`。
+ `CommonJS 和 AMD 模块，都只能在运行时确定这些东西`。
 比如，CommonJS 模块就是对象，输入时必须查找对象属性。
 ES6 “编译时加载”或者静态加载，即可以在编译时就完成模块加载，效率要比 CommonJS 模块的加载方式高。
 
-    + `ES6 的模块自动采用严格模式`，不管你有没有在模块头部加上"use strict";
-    + `import语句是 Singleton 模式。`
-import()函数可以用在任何地方，不仅仅是模块，非模块的脚本也可以使用。
-它是运行时执行，也就是说，什么时候运行到这一句，也会加载指定的模块。
-另外，import()函数与所加载的模块没有静态连接关系，这点也是与import语句不相同。
-import()类似于 Node 的require方法，区别主要是前者是异步加载，后者是同步加载。
++ `ES6 的模块自动采用严格模式`，不管你有没有在模块头部加上"use strict";
++ `import语句是 Singleton 模式。`
++ import()函数可以用在任何地方，不仅仅是模块，非模块的脚本也可以使用。
+它是运行时执行，也就是说，什么时候运行到这一句，也会加载指定的模块。另外，import()函数与所加载的模块没有静态连接关系，这点也是与import语句不相同。import()类似于 Node 的require方法，区别主要是`前者是异步加载，后者是同步加载。`
 
 
 export & export default

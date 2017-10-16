@@ -1,5 +1,5 @@
 
-require: 是 CommonJS 规范
+require: 是 CommonJS 规范，实现：Nodejs
 =======
 + CommonJS 规范是为了解决js的作用域问题而定义的模块形式，可以使每个模块它自身的命名空间中执行，该规范的主要内容是：
     + `模块必须通过module.exports抛出对外的变量或接口`，通过require（）来导入其他模块的输出到当前模块作用域中。
@@ -13,7 +13,7 @@ exports & module.exports
 所以，此处可能会有一类改变地址的操作例如 exports = null，最后导出都不会生效，以module.exports为准。
 
 
-import: ESMAScript规范, ES6+
+import: ESMAScript规范，实现：ES6+
 =======
 
 ES6 模块的设计思想，`是尽量的静态化`，使得编译时就能确定模块的依赖关系，以及输入和输出的变量。

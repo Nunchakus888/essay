@@ -33,14 +33,14 @@ Date:   Sat Oct 28 22:02:04 2017 +0800
 
 然后就改改回来～～
 ```
-git config –global user.name “YOUR NAME” 
-git config –global user.email “YOUR EMAIL ADDRESS”
+git config –global user.name "Neo" 
+git config –global user.email "hello.world@gmail.com"
 
 ```
 更改完后可通过 
 
 ```
-git config –list 查看
+git config --list 查看
 ```
 
 其他的几个不会出发记录contribution的要点我们一般不会触及到。

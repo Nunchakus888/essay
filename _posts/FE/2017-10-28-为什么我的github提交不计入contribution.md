@@ -43,5 +43,5 @@ git config –global user.email "hello.world@gmail.com"
 git config --list 查看
 ```
 
-其他的几个不会出发记录contribution的要点我们一般不会触及到。
+其他的几个不会触发记录contribution的要点我们一般不会触及到。
 详细🔎可查阅 [Learn how we count contributors](https://help.github.com/articles/why-are-my-contributions-not-showing-up-on-my-profile/)

@@ -9,9 +9,9 @@ alipay: /assets/image/alipay.jpg
 favicon: /assets/image/logo.jpg
 basecss: 
 # Theme specific configuration
-title: 
+title: 🙄️🙄️🙄️
 footer_title: I love programming because I love being able to create what I want, no limits
-#description: 额，我先部署个静态页面试试～～
+#description: s c re
 
 # Contact and social media links
 stackoverflow_username: nunchakus
@@ -32,5 +32,5 @@ enable_comment: true
 
 gems: ['jekyll-paginate']
 # Pagination
-paginate: 10
+paginate: 15
 paginate_path: /archive/page:num

@@ -33,8 +33,8 @@ Date:   Sat Oct 28 22:02:04 2017 +0800
 
 然后就改改回来～～
 ```
-git config –global user.name "Neo" 
-git config –global user.email "hello.world@gmail.com"
+git config -–global user.name "Neo" 
+git config -–global user.email "hello.world@gmail.com"
 
 ```
 更改完后可通过 

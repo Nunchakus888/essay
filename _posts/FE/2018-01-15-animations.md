@@ -1,0 +1,113 @@
+---
+layout: post
+title:  animations
+date:   2018-01-15 21:16:00 +0800
+categories: diary
+location: ShangHai, China
+description: 额，页面需要一个活塞运动样子的动画～
+tail: 巧不工
+
+
+---
+---
+
+1.Transition
+============
+
+> 元素就在那，动画过渡，怎么加，给哪加？
+
+```
+
+img{
+    height:15px;
+    width:15px;
+}
+
+img:hover{
+    height: 450px;
+    width: 450px;
+}
+
+img{
+    transition: 1s; // transition指定状态变化所需要的时间。
+    transition: 1s height; // transition只适用于height，width依然是瞬现，效果谁试谁知道
+    transition: 1s height, 1s width;
+    transition: 1s height, 1s 1s width; // 为width指定一个delay参数,1s后开始变化，delay指定了动画发生的顺序
+}
+
+```
+
+* transition的状态变化速度（又称timing function），默认不是匀速的，而是逐渐放慢，这叫做ease。
+* linear：匀速
+* ease-in：加速
+* ease-out：减速
+* cubic-bezier函数：自定义速度模式
+```
+img{
+    transition: 1s ease;
+}
+```
+
+```
+    // 完整写法如下：
+    transition: 1s 1s height ease;
+    
+    // 各个属性：
+    transition-duration: 1s;
+    transition-delay: 1s;
+    transition-property: height;
+    transition-timing-function: ease;
+
+```
+
+
+### transition的局限
+
++ （1）transition需要事件触发，所以没法在网页加载时自动发生。
+
++ （2）transition是一次性的，不能重复发生，除非一再触发。
+
++ （3）transition只能定义开始状态和结束状态，不能定义中间状态，也就是说只有两个状态。
+
++ （4）一条transition规则，只能定义一个属性的变化，不能涉及多个属性。
+
+
+
+2.Animation
+===========
+
+> Animation需要指定动画一个周期持续的时间，以及动画效果的名称。
+
+```
+img5:hover {
+    animation: 1s rainbow;
+    // 当鼠标悬停在元素上时，会产生名为rainbow的动画效果，持续时间为1秒。为此，我们还需要用keyframes关键字，定义rainbow效果。
+}
+
+@keyframes rainbow {
+  0% { background: #c00; }
+  50% { background: orange; }
+  100% { background: yellowgreen; }
+}
+
+     animation: 1s rainbow infinite; // 默认情况下，动画只播放一次。加入infinite关键字，可以让动画无限次播放。
+     animation: 1s rainbow 3; // 也可以指定动画具体播放的次数，比如3次。
+     animation: 1s rainbow forwards; // 动画结束以后，会立即从结束状态跳回到起始状态。如果想让动画保持在结束状态，需要使用animation-fill-mode属性。
+
+```
+
+然后我就这样粗暴的实现了一个活塞运动
+
+```
+.icon {
+  animation: .5s rainbow infinite;
+}
+
+@keyframes rainbow {
+  0% { width: 5px; }
+  50% {  width: 15px; }
+  100% {  width: 0; }
+}
+```
+
+DEMO地址：[https://codepen.io/Nunchakus/pen/dJjwxG](codepen)

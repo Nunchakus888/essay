@@ -1,5 +1,6 @@
 
 ---
+
 layout: post
 title:  Nots of Machine Learning..
 date:   2018-06-06 01:20 +0800
@@ -7,7 +8,6 @@ categories: diary
 location: ShangHai, China
 description: Supervised learning and Unsupervised learning.
 tail: 
-
 
 ---
 ---
